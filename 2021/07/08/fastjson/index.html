@@ -6,20 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Feyoung</title>
+  <title>Feyoung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="一、前言今天在处理业务时，需要把 JSON 中的data属性中的数据转成自定义的实体类，由于对FASTJSON不是很熟悉导致处理速度非常慢，现写一篇文章来记录。下面我们开始把！ 二、FastJson简介Fastjson 是一个 Java 库，可以将 Java 对象转换为 JSON 格式，当然它也可以将 JSON 字符串转换为 Java 对象。 Fastjson 可以操作任何 Java  对象，即使">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/07/01/hello-world/index.html">
+<meta property="og:title" content="Feyoung">
+<meta property="og:url" content="http://example.com/2021/07/08/fastjson/index.html">
 <meta property="og:site_name" content="Feyoung">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="一、前言今天在处理业务时，需要把 JSON 中的data属性中的数据转成自定义的实体类，由于对FASTJSON不是很熟悉导致处理速度非常慢，现写一篇文章来记录。下面我们开始把！ 二、FastJson简介Fastjson 是一个 Java 库，可以将 Java 对象转换为 JSON 格式，当然它也可以将 JSON 字符串转换为 Java 对象。 Fastjson 可以操作任何 Java  对象，即使">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-06-30T17:54:50.955Z">
-<meta property="article:modified_time" content="2021-06-30T17:54:50.956Z">
+<meta property="og:image" content="c:/Users/LFY/AppData/Roaming/Typora/typora-user-images/image-20210707235147700.png">
+<meta property="og:image" content="c:/Users/LFY/AppData/Roaming/Typora/typora-user-images/image-20210707235619555.png">
+<meta property="og:image" content="c:/Users/LFY/AppData/Roaming/Typora/typora-user-images/image-20210708001006462.png">
+<meta property="og:image" content="c:/Users/LFY/AppData/Roaming/Typora/typora-user-images/image-20210708003129505.png">
+<meta property="article:published_time" content="2021-07-07T16:37:38.674Z">
+<meta property="article:modified_time" content="2021-07-07T16:36:58.256Z">
 <meta property="article:author" content="Feyoung">
 <meta property="article:tag" content="会打🏀的👨‍💻">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/LFY/AppData/Roaming/Typora/typora-user-images/image-20210707235147700.png">
   
     <link rel="alternative" href="/atom.xml" title="Feyoung" type="application/atom+xml">
   
@@ -181,40 +186,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-fastjson" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-        
-        <a href="/2021/07/01/hello-world/" class="archive-article-date">
-  	<time datetime="2021-06-30T17:54:50.955Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-01</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>今天在处理业务时，需要把 JSON 中的data属性中的数据转成自定义的实体类，由于对FASTJSON不是很熟悉导致处理速度非常慢，现写一篇文章来记录。下面我们开始把！</p>
+<h2 id="二、FastJson简介"><a href="#二、FastJson简介" class="headerlink" title="二、FastJson简介"></a>二、FastJson简介</h2><p>Fastjson 是一个 Java 库，可以将 Java 对象转换为 JSON 格式，当然它也可以将 JSON 字符串转换为 Java 对象。</p>
+<p>Fastjson 可以操作任何 Java  对象，即使是一些预先存在的没有源码的对象。</p>
+<p>Fastjson 源码地址：<a target="_blank" rel="noopener" href="https://github.com/alibaba/fastjson">https://github.com/alibaba/fastjson</a></p>
+<p>Fastjson 中文 Wiki：<a target="_blank" rel="noopener" href="https://github.com/alibaba/fastjson/wiki/Quick-Start-CN">https://github.com/alibaba/fastjson/wiki/Quick-Start-CN</a></p>
+<p>在现今前后端分离的潮流中，后端都是接收前端传过来的JSON，后端需要把JSON转为自己的实体类再做处理，以及需要返回前端也是JSON形式，这样JSON与java对象的转化显得尤为重要了。</p>
+<p>市面上有其他的转化工具，但是用的最多的还是ali的FastJson</p>
+<h2 id="三、FastJSON使用"><a href="#三、FastJSON使用" class="headerlink" title="三、FastJSON使用"></a>三、FastJSON使用</h2><h4 id="3-1-引入maven依赖"><a href="#3-1-引入maven依赖" class="headerlink" title="3.1 引入maven依赖"></a>3.1 引入maven依赖</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.alibaba&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;fastjson&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;x.x.x&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>定义一个Person对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> ：Fy</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> ：Created in 2021/7/7 23:23</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>：实体类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@JSONField</span>:转化为json对象的一些属性设置</span></span><br><span class="line"><span class="comment">     * name: 指定字段的名称</span></span><br><span class="line"><span class="comment">     * ordinal: 配置序列化和反序列化的顺序</span></span><br><span class="line"><span class="comment">     * format: 指定字段的格式</span></span><br><span class="line"><span class="comment">     * serialize： 是否序列化（若设置为 false 将不显示参与序列化）</span></span><br><span class="line"><span class="comment">     * deserialize：是否反序列化（若设置为 false 将不显示参与反序列化）</span></span><br><span class="line"><span class="comment">     * ...</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@JSONField(name = &quot;AGE&quot;,ordinal = 2,serialize = false)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@JSONField(name = &quot;FULL NAME&quot;,ordinal = 1)</span></span><br><span class="line">    <span class="keyword">private</span> String fullName;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@JSONField(name = &quot;DATE OF BIRTH&quot;,format = &quot;yyyy-MM-dd&quot;,ordinal = 3)</span></span><br><span class="line">    <span class="keyword">private</span> Date dateOfBirth;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> age, String fullName, Date dateOfBirth)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>();</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.fullName= fullName;</span><br><span class="line">        <span class="keyword">this</span>.dateOfBirth = dateOfBirth;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="3-2-java对象转换为JSON对象"><a href="#3-2-java对象转换为JSON对象" class="headerlink" title="3.2 java对象转换为JSON对象"></a>3.2 java对象转换为JSON对象</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> ：Fy</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> ：Created in 2021/7/7 23:27</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>：person的json处理</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PersonServiceImpl</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">         List&lt;Person&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">         list.add(<span class="keyword">new</span> Person(<span class="number">18</span>,<span class="string">&quot;feyoung Liu&quot;</span>,<span class="keyword">new</span> Date()));</span><br><span class="line">         list.add(<span class="keyword">new</span> Person(<span class="number">19</span>,<span class="string">&quot;feyoung Liu&quot;</span>,<span class="keyword">new</span> Date()));</span><br><span class="line">         <span class="comment">//将上面的list转换为JSON对象</span></span><br><span class="line">        String json = JSON.toJSONString(list);</span><br><span class="line">        System.out.println(json);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>得到的结果是：</p>
+<p><img src="C:\Users\LFY\AppData\Roaming\Typora\typora-user-images\image-20210707235147700.png" alt="image-20210707235147700"></p>
+<h4 id="3-3-beanToArray序列化功能"><a href="#3-3-beanToArray序列化功能" class="headerlink" title="3.3 beanToArray序列化功能"></a>3.3 beanToArray序列化功能</h4><p>只将值通过数组的形式返回</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String json = JSON.toJSONString(list, SerializerFeature.BeanToArray);</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img src="C:\Users\LFY\AppData\Roaming\Typora\typora-user-images\image-20210707235619555.png" alt="image-20210707235619555"></p>
+<h4 id="3-4-创建-JSON-对象"><a href="#3-4-创建-JSON-对象" class="headerlink" title="3.4 创建 JSON 对象"></a>3.4 创建 JSON 对象</h4><p>JSON对象在FASTJSON可以分为：JSONObject(json对象，可视为 Map&lt;String,Object&gt; )和JSONArray(json数组对象，可视为 List<Object> )</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">JSONArray jsonArray = <span class="keyword">new</span> JSONArray();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">    JSONObject jsonObject = <span class="keyword">new</span> JSONObject();</span><br><span class="line">    jsonObject.put(<span class="string">&quot;name&quot;</span>,<span class="string">&quot;feyoung&quot;</span>);</span><br><span class="line">    jsonObject.put(<span class="string">&quot;age&quot;</span>,<span class="string">&quot;18&quot;</span>);</span><br><span class="line">    jsonObject.put(<span class="string">&quot;data&quot;</span>,<span class="keyword">new</span> Date());</span><br><span class="line">    jsonArray.add(jsonObject);</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(jsonArray.toJSONString());</span><br></pre></td></tr></table></figure>
 
+<p><img src="C:\Users\LFY\AppData\Roaming\Typora\typora-user-images\image-20210708001006462.png" alt="image-20210708001006462"></p>
+<h4 id="3-5-JSON转为Java对象"><a href="#3-5-JSON转为Java对象" class="headerlink" title="3.5 JSON转为Java对象"></a>3.5 JSON转为Java对象</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Person person = <span class="keyword">new</span> Person(<span class="number">20</span>, <span class="string">&quot;Feyoung&quot;</span>, <span class="keyword">new</span> Date());</span><br><span class="line"><span class="comment">//模拟前端传来的JSON</span></span><br><span class="line">String jsonObject = JSON.toJSONString(person);</span><br><span class="line"><span class="comment">// 将JSON数据解析程对应的实体对象</span></span><br><span class="line">Person personEntity = JSON.parseObject(jsonObject, Person.class);</span><br><span class="line">System.out.println(personEntity);</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-6-实战"><a href="#3-6-实战" class="headerlink" title="3.6 实战"></a>3.6 实战</h4><p><img src="C:\Users\LFY\AppData\Roaming\Typora\typora-user-images\image-20210708003129505.png" alt="image-20210708003129505"></p>
+<p>在实际场景中这种类型的JSON常有，我们应该怎么解析它呢</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JSONObject.toJavaObject(JSONObject.parseObject(JSONObject.toJSON(jsonObject.get(<span class="string">&quot;data&quot;</span>)).toString()), Person.class);</span><br></pre></td></tr></table></figure>
+
+<p>首先获取到data的json再将其转为json字符串，再映射到Person上转成实体类</p>
+<h2 id="四、FastJson源码"><a href="#四、FastJson源码" class="headerlink" title="四、FastJson源码"></a>四、FastJson源码</h2>
       
 
       
@@ -303,7 +311,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/01/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/08/fastjson/" alt="微信分享二维码">
     </div>
 </div>
 
